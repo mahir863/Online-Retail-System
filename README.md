@@ -1,2 +1,167 @@
-# Online-Retail-System
-This project involves extracting real-time news data using the Guardian API through a Python script, followed by data cleaning and storage for analysis. SQL is then used to query the dataset and derive key KPIs such as article volume trends, topic-wise distribution, publication frequency, and source performance.
+# 🛍️ AI-Driven Online Retail Customer Intelligence System
+
+## 📌 Project Overview
+This project demonstrates an **end-to-end Machine Learning workflow** using a real-world **Online Retail transactional dataset**.  
+The same dataset is used to implement:
+
+- ✅ **Unsupervised Learning** (Customer Segmentation)
+- ✅ **Supervised Learning** (Customer Value Prediction)
+
+
+The project focuses on extracting **business insights**, predicting **high-value customers**, and comparing **traditional ML models with Deep Learning**, following industry best practices.
+
+---
+
+## 📊 Dataset Information
+- **Dataset Name:** Online Retail II (UCI)
+- **Source:** Kaggle  
+- **Dataset Link:** https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci
+
+### Key Columns
+- `Invoice`
+- `StockCode`
+- `Description`
+- `Quantity`
+- `InvoiceDate`
+- `Price`
+- `Customer ID`
+- `Country`
+
+---
+
+## 🎯 Project Objectives
+- Understand customer purchasing behavior
+- Segment customers using unsupervised learning
+- Predict high-value customers using supervised learning
+- Apply deep learning and compare performance with ML models
+- Build a real-world, industry-style ML pipeline
+
+---
+
+## 🔄 Project Workflow
+Data Loading  
+↓  
+Exploratory Data Analysis (EDA)  
+↓  
+Data Cleaning & Preprocessing  
+↓  
+Feature Engineering (RFM Analysis)  
+↓  
+Unsupervised Learning (Clustering)  
+↓  
+Supervised Learning (Classification)  
+↓  
+Deep Learning (ANN)  
+↓  
+Model Evaluation & Comparison
+
+---
+
+## 🧪 Methodology
+
+### 1️⃣ Data Loading
+- Loaded dataset using Pandas
+- Initial inspection using `.head()`, `.info()`, and `.describe()`
+
+---
+
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Missing value analysis
+- Quantity and unit price distribution
+- Country-wise sales analysis
+- Time-based (monthly) sales trends
+- Identification of outliers and returns
+
+---
+
+### 3️⃣ Data Cleaning
+- Removed missing `CustomerID`
+- Removed negative quantities (product returns)
+- Removed zero or negative prices
+- Created `TotalPrice = Quantity × UnitPrice`
+- Removed duplicate records
+
+---
+
+### 4️⃣ Feature Engineering – RFM Analysis
+Created customer-level features:
+- **Recency:** Days since last purchase
+- **Frequency:** Number of invoices per customer
+- **Monetary:** Total spending per customer
+
+Additional steps:
+- Log transformation to reduce skewness
+- Standard scaling for ML models
+
+---
+
+### 5️⃣ Unsupervised Learning – Customer Segmentation
+- Algorithm used: **KMeans Clustering**
+- Optimal number of clusters selected using:
+  - Elbow Method
+  - Silhouette Score
+
+#### Customer Segments Identified
+| Segment | Description |
+|------|------------|
+| High-Value Customers | Frequent, recent, high spenders |
+| Regular Customers | Moderate engagement and spending |
+| At-Risk Customers | Infrequent purchases, low spending |
+
+---
+
+### 6️⃣ Supervised Learning – Customer Value Prediction
+- Target variable created from clustering results:
+  - `High_Value = 1` for high-value customers
+- Models implemented:
+  - Logistic Regression
+  - Random Forest
+- Evaluation metrics:
+  - Accuracy
+  - Precision, Recall, F1-score
+  - ROC-AUC
+
+
+---
+
+## 📈 Model Performance Comparison
+
+| Model | Strength |
+|------|---------|
+| Logistic Regression | Simple and interpretable baseline |
+| Random Forest | Strong classical ML performance |
+
+
+---
+
+## 🗂️ Project Structure
+```
+AI-Driven Online Retail Customer Intelligence System/
+│
+├── notebooks/
+│   └── Customer_Segmentation_and_RFM.ipynb
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 🛠️ Technologies Used
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- TensorFlow / Keras
+- Jupyter Notebook
+
+---
+
+## 📚 Key Learnings
+- Converting transactional data into ML-ready features
+- Applying unsupervised learning for customer segmentation
+- Creating supervised learning labels from business insights
+
+
+---
+
