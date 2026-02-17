@@ -5,7 +5,6 @@ This project demonstrates an **end-to-end Machine Learning workflow** using a re
 The same dataset is used to implement:
 
 - ✅ **Unsupervised Learning** (Customer Segmentation)
-- ✅ **Supervised Learning** (Customer Value Prediction)
 
 
 The project focuses on extracting **business insights**, predicting **high-value customers**, and comparing **traditional ML models with Deep Learning**, following industry best practices.
@@ -48,12 +47,6 @@ Data Cleaning & Preprocessing
 Feature Engineering (RFM Analysis)  
 ↓  
 Unsupervised Learning (Clustering)  
-↓  
-Supervised Learning (Classification)  
-↓  
-Deep Learning (ANN)  
-↓  
-Model Evaluation & Comparison
 
 ---
 
@@ -89,17 +82,12 @@ Created customer-level features:
 - **Frequency:** Number of invoices per customer
 - **Monetary:** Total spending per customer
 
-Additional steps:
-- Log transformation to reduce skewness
-- Standard scaling for ML models
-
 ---
 
 ### 5️⃣ Unsupervised Learning – Customer Segmentation
 - Algorithm used: **KMeans Clustering**
 - Optimal number of clusters selected using:
   - Elbow Method
-  - Silhouette Score
 
 #### Customer Segments Identified
 | Segment | Description |
@@ -107,29 +95,6 @@ Additional steps:
 | High-Value Customers | Frequent, recent, high spenders |
 | Regular Customers | Moderate engagement and spending |
 | At-Risk Customers | Infrequent purchases, low spending |
-
----
-
-### 6️⃣ Supervised Learning – Customer Value Prediction
-- Target variable created from clustering results:
-  - `High_Value = 1` for high-value customers
-- Models implemented:
-  - Logistic Regression
-  - Random Forest
-- Evaluation metrics:
-  - Accuracy
-  - Precision, Recall, F1-score
-  - ROC-AUC
-
-
----
-
-## 📈 Model Performance Comparison
-
-| Model | Strength |
-|------|---------|
-| Logistic Regression | Simple and interpretable baseline |
-| Random Forest | Strong classical ML performance |
 
 
 ---
