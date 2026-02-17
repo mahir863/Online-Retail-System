@@ -127,6 +127,8 @@ AI-Driven Online Retail Customer Intelligence System/
 - Applying unsupervised learning for customer segmentation
 - Creating supervised learning labels from business insights
 
+**Dashboard Preview**
 
+![Dashboard Preview](https://github.com/mahir863/Online-Retail-System/blob/main/online_retail_sales.jpeg)
 ---
 
