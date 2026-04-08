@@ -1,4 +1,4 @@
-Online Retail Customer Intelligence System
+**Online Retail Customer Intelligence System**
 
 ## 📌 Project Overview
 This project demonstrates an **end-to-end Machine Learning workflow** using a real-world **Online Retail transactional dataset**.  
@@ -7,7 +7,7 @@ The same dataset is used to implement:
 - ✅ **Unsupervised Learning** (Customer Segmentation)
 
 
-The project focuses on extracting **business insights**, predicting **high-value customers**, and comparing **traditional ML models with Deep Learning**, following industry best practices.
+The project focuses on extracting **business insights** and predicting **high-value customers**
 
 ---
 
@@ -30,10 +30,9 @@ The project focuses on extracting **business insights**, predicting **high-value
 
 ## 🎯 Project Objectives
 - Understand customer purchasing behavior
-- Segment customers using unsupervised learning
+- Segment customers based on spendings using unsupervised learning
 - Predict high-value customers using supervised learning
-- Apply deep learning and compare performance with ML models
-- Build a real-world, industry-style ML pipeline
+
 
 ---
 
@@ -117,7 +116,6 @@ AI-Driven Online Retail Customer Intelligence System/
 - Pandas, NumPy
 - Matplotlib, Seaborn
 - Scikit-learn
-- TensorFlow / Keras
 - Jupyter Notebook
 
 ---
