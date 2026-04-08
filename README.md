@@ -1,4 +1,4 @@
-# 🛍️ AI-Driven Online Retail Customer Intelligence System
+Online Retail Customer Intelligence System
 
 ## 📌 Project Overview
 This project demonstrates an **end-to-end Machine Learning workflow** using a real-world **Online Retail transactional dataset**.  
