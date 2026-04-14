@@ -127,6 +127,6 @@ AI-Driven Online Retail Customer Intelligence System/
 
 **Dashboard Preview**
 
-![Dashboard Preview](https://github.com/mahir863/Online-Retail-System/blob/main/online_retail_sales.jpeg)
+![Dashboard Preview](https://github.com/mahir863/Online-Retail-System/blob/main/retail_sales_data.png)
 ---
 
